@@ -10,8 +10,8 @@ async function displayMovies() {
     
     movies.forEach(movie => {
         const movieDiv = document.createElement('div');
-        movieDiv.innerHTML =  `<img src="${movie.Poster}" style="width: 50px; height: 50px;"> <br /> Titre:  ${movie.Title}`;
-
+        movieDiv.classList.add("test");
+        movieDiv.innerHTML =  `<img src="${movie.Poster}" style="width: 50px; height: 50px;"> <br /> Titre:  <a href="movie.html?id=${movie.imdbID}" >${movie.Title}</a>`;
         moviesContainer.appendChild(movieDiv);
     });
 }
