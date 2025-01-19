@@ -131,3 +131,21 @@ header a:hover {
 #search-form button:hover {
     background-color: #0056b3;
 }
+
+#load-more {
+    color: #fff;
+    background-color: #007BFF;
+    display: block;
+    margin: 16px auto;
+    padding: 10px 20px; 
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#load-more:hover {
+    background-color: #4397f1;
+}
+
