@@ -8,6 +8,8 @@ const movieId = urlParams.get('id');
  */
 async function displayMovieDetails() {
     const movieDetails = await getMovieDetails(movieId);
+   
+
 
     document.getElementById("moviePoster").src = movieDetails.Poster;
     document.getElementById("movieTitle").textContent = movieDetails.Title;

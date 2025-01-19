@@ -1,0 +1,113 @@
+/* pour l'ensemble des cartes */
+#movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cartes plus petites */
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 11px;
+    margin: 17px auto;
+    max-width: 1000px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /*autour du movies-container mettre un effet shado*/
+}
+
+/* pour chaque carte */
+
+#movies-container .test {
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden; /* pour que rien ne dépasse des cartes et qu'elles aient la même proportion*/
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    aspect-ratio: 9 / 16; /* Conserver la même proportion */
+}
+
+
+#movies-container .test img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* images sans distorsion */
+    border-radius: 12px 12px 0 0;
+}
+
+
+#movies-container .test h3 {
+    margin: 10px 0 ;
+    font-size: 15px;
+}
+
+#movies-container .test a {
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: ;
+    color: #007BFF;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+#movies-container .test a:hover {
+    color: #0056b3;
+}
+
+/* quand les cartes sont survollées */
+#movies-container .test:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+/*Pour le button */
+#load-more {
+    color: #fff;
+    background-color: #007BFF;
+    display: block;
+    margin: 16px auto;
+    padding: 10px 20px; 
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#load-more:hover {
+    background-color: #4397f1;
+}
+
+
+
+body {
+    background-color: #eaeef3;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    color: #fff;
+    background-color: #007BFF;
+    padding: 16px 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header a {
+    color: #fff;
+    margin: 0 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}

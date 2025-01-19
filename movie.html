@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/movie.css">
     <title>Détails du Film</title>
 </head>
 <body>
     <header>
-        <h1 id="movieTitle">Titre du film</h1>
+        <a href="index.html"> Accueil</a>
+        <a href="search.html"> Recherche </a>
     </header>
     <main>
-        <img id="moviePoster" alt="Poster du film" style="height: 200px; width: 200px;"><br />
-        Plot: <p id="moviePlot"></p>
-        Genre: <p id="movieGenre"></p>
-        Acteurs: <p id="movieActors"></p>
+        <div class="card">
+            <img id="moviePoster" alt="Poster du film">
+            <h2 id="movieTitle">Titre du film</h2>
+            <p><strong>Plot:</strong> <span id="moviePlot"></span></p>
+            <p><strong>Genre:</strong> <span id="movieGenre"></span></p>
+            <p><strong>Acteurs:</strong> <span id="movieActors"></span></p>
+        </div>
     </main>
 
     <script src="javascript/movie.js" type="module"></script>
